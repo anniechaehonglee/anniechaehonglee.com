@@ -1,0 +1,374 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Annie Chaehong Lee</title>
+</head>
+<body>
+
+  <div class="bg_img"></div>
+  <div class="overlay_black" hidden="hidden"></div>
+  <div class="content" id="menu">
+
+      <g class="menu" onclick="showAbout()">About</g>
+      <g class="menu" onclick="showWork()">Work</g>
+      <g class="menu" onclick="showDoodle()">Doodle</g>
+      <g class="menu" onclick="showResume()">Resume</g>
+      <g class="menu" onclick="showContact()">Contact</g>
+
+    </div>
+  <div class="content" id="back" onclick="back()" hidden="hidden">
+    back
+  </div>
+  <div class="content" id="back_doodle" onclick="back_doodle()" hidden="hidden">
+    back
+  </div>
+  <div class="content" id="about" hidden="hidden">
+      <h1>Annie Chaehong Lee</h1>
+      <p>Hello! I am a student at Washington University in St. Louis majoring in computer science and applied mathematics and minoring in communication design. I'm interested in studying in depth augmented reality and virtual reality for advanced communication experiences for people. I plan to attend a graduate school and study  fields of computer science more in depth to improve my knowledge of machine learning, user experience, computer vision, and much more<p>
+      <a href="https://www.facebook.com/hahahahannie" target="_blank"><img class="icon" src="fb.png"></a>
+      <a href="https://www.linkedin.com/in/anniechaehonglee/" target="_blank"><img class="icon" src="link.png"></a>
+      <a href="https://www.instagram.com/hahahahannie/" target="_blank"><img class="icon" src="inst.png"></a>
+    </div>
+  <div class="content" id="work" hidden="hidden">
+      <!--FIXME!-->
+    </div>
+  <div class="content" id="doodle" hidden="hidden">
+
+      <div class="photoframe">
+
+        <div class="container" onclick="showDesignWork(1)">
+          <img src="design\illak_poster\poster_star.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Poster</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(2)">
+          <img src="design\stress\1.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Stress Series</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(3)">
+          <img src="design\pattern\thumbnail.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Pattern Studies</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(4)">
+          <img src="design\aretheseedible_thumbnail.jpg"class="image">
+          <div class="overlay">
+            <div class="text">Award Winning Work</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="photoframe">
+
+        <div class="container" onclick="showDesignWork(5)">
+          <img src="design\gif.gif" class="image">
+          <div class="overlay">
+            <div class="text">.gif</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(6)">
+          <img src="design\cards\graduation_thumbnail2.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Greeting Cards</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(7)">
+          <img src="design\pothead_thumbnail.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Potheads</div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="photoframe">
+
+        <div class="container" onclick="showDesignWork(8)">
+          <img src="design\character\thumbnail.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Character Design</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(9)">
+          <img src="design\me\jaded.jpg" class="image">
+          <div class="overlay">
+            <div class="text">Me, Myself, & I</div>
+          </div>
+        </div>
+
+        <div class="container" onclick="showDesignWork(10)">
+          <img src="design\matsuri\b.png" class="image">
+          <div class="overlay">
+            <div class="text">Matsuri</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  <div class="content" id="resume" hidden="hidden">
+      <embed src="resume2017.pdf" type='application/pdf' width=100% height=100%>
+  </div>
+  <div class="content" id="contact" hidden="hidden">
+    <!-- method="POST" action="http://formspree.io/alflyaway0626@gmail.com" -->
+    <form id="contact-form" enctype="text/plain">
+      <p> Dear Annie,<br>
+        My name is
+        <input type="text" name="name" id="name" minlength="3" placeholder="YOUR NAME" required> .</p>
+        <p> You can contact me at
+        <input type="email" name="email" id="email" placeholder="YOUR EMAIL" required> .</p>
+        <p> I wanted to contact you to tell you that</p>
+        <select>
+          <option value="default" selected="selected">...</option>
+          <option value="awesome">you are awesome</option>
+          <option value="work">I love your work!</option>
+          <option value="meeting">I'd like to meet you</option>
+          <option value="netflix">wanna netflix and chill?</option>
+        </select><br>
+        <div class="expandingArea">
+          <textarea name="message" id="message" placeholder="OR TYPE MESSAGE HERE"></textarea>
+        </div>
+        <div class="send" onclick="thankyou()"> <!--FIXME-->
+          <input id="send" name="send" value="SEND"> <!--change to type="submit"-->
+        </div>
+    </form>
+  </div>
+  <div class="content" id="thankyou">
+    <img src="thankyou.png">
+    <button id="send" onclick="back()">BACK</button>
+  </div>
+
+  <!--Design Works Display Here-->
+  <div class="art" id="doodle1" hidden="hidden">
+        <img class="poster" src="design\illak_poster\poster.jpg">
+        <img class="poster" src="design\illak_poster\poster_sky.jpg">
+        <img class="poster" src="design\illak_poster\poster_star.jpg">
+        <img class="poster" src="design\illak_poster\clubdeal.jpg">
+        <img class="poster" src="design\illak_poster\hotdeal.jpg">
+        <img class="poster" src="design\illak_poster\dday.jpg">
+        <img class="poster" src="design\illak_poster\emoji_club.jpg">
+        <img class="poster" src="design\illak_poster\emoji_event.jpg">
+        <img class="poster" src="design\illak_poster\emoji_infinity2.jpg">
+        <img class="poster" src="design\illak_poster\와미시.jpg">
+        <img class="poster" src="design\illak_poster\2016halloweenposter.jpg">
+        <img class="poster" src="design\illak_poster\kgsa.jpg">
+        <img class="poster" src="design\illak_poster\welcome poster6.jpg">
+        <img class="poster" src="design\illak_poster\welcome poster7.jpg">
+        <img class="poster" src="design\illak_poster\welcome poster8.jpg">
+      </div>
+  <div class="art" id="doodle2" hidden="hidden">
+
+          <img class="mySlides" src="design\stress\1.jpg" style="width:90%">
+          <img class="mySlides" src="design\stress\2.jpg" style="width:90%">
+          <img class="mySlides" src="design\stress\3.jpg" style="width:45%">
+
+          <button class="slide-button display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="slide-button display-right" onclick="plusDivs(1)">&#10095;</button>
+
+      </div>
+  <div class="art" id="doodle3" hidden="hidden">
+        <img class="pattern" src="design\pattern\1.png">
+        <img class="pattern" src="design\pattern\2.png">
+        <img class="pattern" src="design\pattern\3.png">
+        <img class="pattern" src="design\pattern\4.png">
+        <img class="pattern" src="design\pattern\5.png">
+      </div>
+  <div class="art" id="doodle4" hidden="hidden">
+        <img class="edible" src="design\aretheseedible.jpg">
+        <img class="edible" src="design\aretheseedible_thumbnail.jpg" style="max-width:50vw">
+        <img class="edible" src="design\aretheseedible_detail.jpg" style="max-width:50vw">
+      </div>
+  <div class="art" id="doodle5" hidden="hidden">
+        <img src="design\gif.gif">
+      </div>
+  <div class="art" id="doodle6" hidden="hidden">
+        <img class="cards" src="design\cards\birthday_thumbnail1.jpg">
+        <img class="cards" src="design\cards\birthday_thumbnail2.jpg">
+        <img class="cards" src="design\cards\birthday.jpg" style="max-width:30vw">
+        <img class="cards" src="design\cards\christmas_thumbnail1.jpg">
+        <img class="cards" src="design\cards\christmas_thumbnail2.jpg">
+        <img class="cards" src="design\cards\christmas.jpg" style="max-width:30vw">
+        <img class="cards" src="design\cards\graduation_thumbnail1.jpg">
+        <img class="cards" src="design\cards\graduation_thumbnail2.jpg">
+        <img class="cards" src="design\cards\graduation.jpg" style="max-width:30vw">
+      </div>
+  <div class="art" id="doodle7" hidden="hidden">
+        <p>First printmaking</p>
+        <img class="me" src="design\pothead.jpg">
+      </div>
+  <div class="art" id="doodle8" hidden="hidden">
+        <img class="lostheads" src="design\character\lostheads.png" width="10vw">
+      </div>
+  <div class="art" id="doodle9" hidden="hidden">
+        <img class="me" src="design\me\ego.jpg">
+        <img class="me" src="design\me\jaded.jpg">
+        <img class="me" src="design\me\longing.jpg">
+        <img class="me" src="design\me\love.jpg">
+        <img class="me" src="design\me\trapped.jpg">
+      </div>
+  <div class="art" id="doodle10" hidden="hidden">
+        <img class="matsuri" src="design\matsuri\a.jpg" style="width:90%">
+        <img class="matsuri" src="design\matsuri\b.png" style="width:90%">
+        <img class="matsuri" src="design\matsuri\c.jpg" style="width:90%">
+        <img class="matsuri" src="design\matsuri\d.png" style="width:90%">
+        <img class="matsuri" src="design\matsuri\e.jpg" style="width:90%">
+        <img class="matsuri" src="design\matsuri\f.jpg" style="width:90%">
+        <img class="matsuri" src="design\matsuri\g.jpg" style="width:90%">
+        <img class="matsuri" src="design\matsuri\h.jpg" style="width:90%">
+        <img class="matsuri" src="design\matsuri\i.jpg" style="width:90%">
+      </div>
+  <!--Ends Here-->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.js"></script>
+  <script>
+    function show(){
+      //FIXME
+      //var id = document.getIdbyClass("menu").value
+      $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".bg_img").removeClass('blur-in');
+      $(".bg_img").addClass('blur-out');
+      $(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 300);
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $("#menu").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function back(){
+      $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".bg_img").removeClass('blur-in');
+      $(".bg_img").addClass('blur-out');
+      $(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 300);
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $("#menu").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function back_doodle(){
+      $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".bg_img").removeClass('blur-out');
+      $(".bg_img").addClass('blur-in');
+      $("#back_doodle").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $("#doodle").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function showAbout(){
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
+      $(".bg_img").removeClass('blur-out');
+      $(".bg_img").addClass('blur-in');
+      $("#about").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+
+    }
+    function showWork(){
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
+      $(".bg_img").removeClass('blur-out');
+      $(".bg_img").addClass('blur-in');
+      $("#work").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function showDoodle(){
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
+      $(".bg_img").removeClass('blur-out');
+      $(".bg_img").addClass('blur-in');
+      $("#doodle").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function showResume(){
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
+      $(".bg_img").removeClass('blur-out');
+      $(".bg_img").addClass('blur-in');
+      $("#resume").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function showContact(){
+      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
+      $(".bg_img").removeClass('blur-out');
+      $(".bg_img").addClass('blur-in');
+      $("#contact").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function showDesignWork(num){
+      var id = "#doodle" + String(num);
+      $("#back").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $("#doodle").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $(id).fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#back_doodle").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    function thankyou(){
+      $("#contact").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
+      $("#thankyou").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+    }
+    $(function () {
+      var txtemail = $('#email'),
+      txtname = $('#name'),
+      txtmsg = $('#message'),
+      hiddenDiv = $(document.createElement('div')),
+      content = null;
+
+      txtemail.addClass('txtstuff');
+      txtname.addClass('txtstuff');
+      txtmsg.addClass('txtstuff');
+      hiddenDiv.addClass('hiddendiv common');
+
+      $('body').append(hiddenDiv);
+
+      txtemail.on('keyup', function () {
+        content = $(this).val();
+        content = content.replace(/\n/g, '<br>');
+        hiddenDiv.html(content + '<br class="lbr">');
+        $(this).css('width', hiddenDiv.width());
+      });
+      txtname.on('keyup', function () {
+        content = $(this).val();
+        content = content.replace(/\n/g, '<br>');
+        hiddenDiv.html(content + '<br class="lbr">');
+        //$(this).css('height', hiddenDiv.height());
+        $(this).css('width', hiddenDiv.width());
+      });
+      txtmsg.on('keyup', function () {
+        content = $(this).val();
+        content = content.replace(/\n/g, '<br>');
+        hiddenDiv.html(content + '<br class="lbr">');
+        $(this).css('height', hiddenDiv.height());
+      });
+    });
+  </script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex-1].style.display = "block";
+    }
+  </script>
+</body>
+</html>
