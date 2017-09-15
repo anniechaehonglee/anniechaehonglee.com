@@ -9,7 +9,7 @@
 
   <div class="bg_img"></div>
   <div class="overlay_black" hidden="hidden"></div>
-  <div class="content" id="menu">
+  <div class="content" id="menuContent">
 
       <g class="menu" onclick="showAbout()">About</g>
       <g class="menu" onclick="showWork()">Work</g>
@@ -240,7 +240,7 @@
       $(".bg_img").addClass('blur-out');
       $(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 300);
       $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#menu").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#menuContent").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
     }
     function back(){
       $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
@@ -248,7 +248,7 @@
       $(".bg_img").addClass('blur-out');
       $(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 300);
       $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#menu").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
+      $("#menuContent").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
     }
     function back_doodle(){
       $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);

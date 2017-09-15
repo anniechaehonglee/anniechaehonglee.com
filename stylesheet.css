@@ -6,7 +6,7 @@ body {
   border: #FF0004 10px;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1em;
   animation: colorchange 15s cubic-bezier(1,0,0,1) infinite;
   -webkit-animation: colorchange 15s cubic-bezier(1,0,0,1) infinite;
 }
@@ -30,20 +30,6 @@ body {
   z-index: 1;
   top: 0;
 }
-@keyframes colorchange{
-  0%   {background: rgb(228, 185, 188);}
-  30%  {background: rgb(211, 174, 231);}
-  60%  {background: rgb(182, 199, 242);}
-  90%  {background: rgb(163, 219, 204);}
-  100% {background: rgb(228, 185, 188);}
-}
-@-webkit-keyframes colorchange{
-  0%   {background: rgb(228, 185, 188);}
-  30%  {background: rgb(211, 174, 231);}
-  60%  {background: rgb(182, 199, 242);}
-  90%  {background: rgb(163, 219, 204);}
-  100% {background: rgb(228, 185, 188);}
-}
 .content{
   display: flex;
   align-items: center;
@@ -59,6 +45,20 @@ body {
   -moz-animation: blur-out 2s forwards;
   -o-animation: blur-out 2s forwards;
   animation: blur-out 2s forwards;
+}
+@keyframes colorchange{
+  0%   {background: rgb(228, 185, 188);}
+  30%  {background: rgb(211, 174, 231);}
+  60%  {background: rgb(182, 199, 242);}
+  90%  {background: rgb(163, 219, 204);}
+  100% {background: rgb(228, 185, 188);}
+}
+@-webkit-keyframes colorchange{
+  0%   {background: rgb(228, 185, 188);}
+  30%  {background: rgb(211, 174, 231);}
+  60%  {background: rgb(182, 199, 242);}
+  90%  {background: rgb(163, 219, 204);}
+  100% {background: rgb(228, 185, 188);}
 }
 @-webkit-keyframes blur {
     0% {
@@ -210,9 +210,7 @@ body {
 }
 /*-Menu Stylesheet-*/
 /*!!!!!!FIXME!!!!!*/
-#menu{
-  width: 80vh;
-  height: 100vh;
+#menuContent{
   position: fixed;
   top: 0;
   bottom: 0;
@@ -222,9 +220,11 @@ body {
   margin: auto;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   z-index: 400;
   font-weight: bold;
+  font-size: 22px;
 }
 #back, #back_doodle{
   position: fixed;
@@ -239,6 +239,7 @@ body {
 }
 .menu{
   color: rgb(255, 255, 255);
+  padding: 2vw;
   margin: auto;
 }
 .menu:hover, #back:hover, #back_doodle:hover,
@@ -249,23 +250,23 @@ a:hover{
 }
 /*--About Stylesheet--*/
 #about{
-  width: 80vh;
-  height: 80vh;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
+  padding: 2vw;
   opacity: 0;
   flex-direction: column;
   color: rgb(255, 255, 255);
+  word-wrap: break-word;
 }
 h3{
   font-weight: 400;
 }
 p{
-  font-size: 13px;
+  font-size: 1em;
 }
 a{
   padding-right: 5px;
@@ -543,7 +544,7 @@ select {
   text-overflow: '';
   display: flex;
   outline: none;
-  padding: 2em 0em 2em 2em;
+  height:auto;
   border: 1px solid rgb(255, 255, 255);
   border-radius: 1px;
   position: relative;
