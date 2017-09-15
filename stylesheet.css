@@ -211,6 +211,7 @@ body {
 /*-Menu Stylesheet-*/
 /*!!!!!!FIXME!!!!!*/
 #menuContent{
+  max-width: 80vw;
   position: fixed;
   top: 0;
   bottom: 0;
