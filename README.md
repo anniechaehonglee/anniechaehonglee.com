@@ -1,3 +1,4 @@
 # anniechaehonglee.github.io
-Code for personal website
-View this site and its template through: anniechaehonglee.com
+---
+Code for a personal website
+View this site and its template through: http://anniechaehonglee.com

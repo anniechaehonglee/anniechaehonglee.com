@@ -1,381 +1,349 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset = "UTF-8">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <title>Annie Chaehong Lee</title>
+	<meta charset = "UTF-8">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<title>Annie Chaehong Lee</title>
 </head>
 <body>
 
-  <div class="bg_img"></div>
-  <div class="overlay_black" hidden="hidden"></div>
-  <div class="content" id="menuContent">
+	<div class="bg_img"></div>
+	<div class="overlay_black" hidden="hidden"></div>
+	<div class="content" id="menuContent">
 
-      <g class="menu" onclick="showAbout()">About</g>
-      <g class="menu" onclick="showWork()">Work</g>
-      <g class="menu" onclick="showDoodle()">Doodle</g>
-      <g class="menu" onclick="showResume()">Resume</g>
-      <g class="menu" onclick="showContact()">Contact</g>
+		<g class="menu">About</g>
+		<g class="menu">Work</g>
+		<g class="menu">Doodle</g>
+		<g class="menu">Resume</g>
+		<g class="menu">Contact</g>
 
-    </div>
-  <div class="content" id="back" onclick="back()" hidden="hidden">
-    ⬅
-  </div>
-  <div class="content" id="back_doodle" onclick="back_doodle()" hidden="hidden">
-    ⬅
-  </div>
-  <div class="content" id="about" hidden="hidden">
-      <h3><center>ANNIE CHAEHONG LEE<br></center></h3>
-      <img src="annie.jpg" /><br>
-      <p>I'm a junior at Washington University in St. Louis majoring in computer science and applied mathematics and minoring in communication design. I'm interested in studying augmented reality and virtual reality for advanced communication experiences for people. I plan to attend a graduate school and study fields of computer science more in depth to improve my knowledge on machine learning, user experience, computer vision, and much more.<br><br>Something that differentiates me from other computer scientists is that I have a deep personal history with art and design. I used to pursue a degree as an artist, following my mother's and grandmother's career, but I switched my career path after realizing I can be just as creative with just a few lines of code--without paint and brushes. But still, this background in art and design lets me percieve the world more fluently, allowing me to build a better code that can communciate with others better.<br><p>
-      <center><a href="https://www.linkedin.com/in/anniechaehonglee/" target="_blank">Linked In</a>
-      <a href="https://www.instagram.com/hahahahannie/" target="_blank">Instagram</a></center>
-    </div>
-  <div class="content" id="work" hidden="hidden">
-      <center><p>this page is still under construction..<p></center>
-    </div>
-  <div class="content" id="doodle" hidden="hidden">
+	</div>
+	<div class="content" id="back" onclick="back()" hidden="hidden">
+		⬅
+	</div>
+	<div class="content" id="back_doodle" onclick="back_doodle()" hidden="hidden">
+		⬅
+	</div>
+	<div class="content" id="About" hidden="hidden">
+		<h2><center>ANNIE CHAEHONG LEE<br></center></h2>
+		<img src="annie.jpg" /><br>
+		<p>I'm a junior at Washington University in St. Louis majoring in computer science and applied mathematics and minoring in communication design. I'm interested in studying augmented reality and virtual reality for advanced communication experiences for people. I plan to attend a graduate school and study fields of computer science more in depth to improve my knowledge on machine learning, user experience, computer vision, and much more.<br><br>Something that differentiates me from other computer scientists is that I have a deep personal history with art and design. I used to pursue a degree as an artist, following my mother's and grandmother's career, but I switched my career path after realizing I can be just as creative with just a few lines of code--without paint and brushes. But still, this background in art and design lets me percieve the world more fluently, allowing me to build a better code that can communciate with others better.<br></p>
+		<center>
+			<a href="https://www.linkedin.com/in/anniechaehonglee/" target="_blank">Linked In</a>
+			<a href="https://www.instagram.com/hahahahannie/" target="_blank">Instagram</a>
+		</center>
+	</div>
 
-      <div class="photoframe">
+	<div class="content" id="Work" hidden="hidden">
+		<div class="wrapper">
+			<h1>CS projects. year 2017.</h1><br /><br />
+			<ul>
+				<li id="spine"><a href=#>SPiNE</a>, device that measures pelvic rotation
+					<div class="cs_contents" id="spine_contents"></div>
+				</li>
+				<li id="sepia"><a href=#>Sepia</a>, take screenshots of your favorite music
+					<div class="cs_contents" id="sepia_contents"></div>
+				</li>
+				<li id="hci"><a href=#>HCI+ML Research at Looking Glass WUSTL</a>
+					<div class="cs_contents" id="hci_contents"></div>
+				</li>
+				<li><a href="https://github.com/anniechaehonglee" target="blank">Github</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="content" id="Doodle" hidden="hidden">
 
-        <div class="container" onclick="showDesignWork(1)">
-          <img src="design\illak_poster\poster_star.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Poster</div>
-          </div>
-        </div>
+		<div class="photoframe">
 
-        <div class="container" onclick="showDesignWork(2)">
-          <img src="design\stress\1.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Stress Series</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(2)">
+				<img src="design\stress\1.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Stress Series</div>
+				</div>
+			</div>
 
-        <div class="container" onclick="showDesignWork(3)">
-          <img src="design\pattern\thumbnail.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Pattern Studies</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(3)">
+				<img src="design\pattern\thumbnail.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Pattern Studies</div>
+				</div>
+			</div>
 
-        <div class="container" onclick="showDesignWork(4)">
-          <img src="design\aretheseedible_thumbnail.jpg"class="image">
-          <div class="overlay">
-            <div class="text">Award Winning Work</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(4)">
+				<img src="design\aretheseedible_thumbnail.jpg"class="image">
+				<div class="overlay">
+					<div class="text">Award Winning Work</div>
+				</div>
+			</div>
 
-      </div>
+		</div>
 
-      <div class="photoframe">
+		<div class="photoframe">
 
-        <div class="container" onclick="showDesignWork(5)">
-          <img src="design\gif.gif" class="image">
-          <div class="overlay">
-            <div class="text">.gif</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(5)">
+				<img src="design\gif.gif" class="image">
+				<div class="overlay">
+					<div class="text">.gif</div>
+				</div>
+			</div>
 
-        <div class="container" onclick="showDesignWork(6)">
-          <img src="design\cards\graduation_thumbnail2.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Greeting Cards</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(6)">
+				<img src="design\cards\graduation_thumbnail2.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Greeting Cards</div>
+				</div>
+			</div>
 
-        <div class="container" onclick="showDesignWork(7)">
-          <img src="design\pothead_thumbnail.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Potheads</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(7)">
+				<img src="design\pothead_thumbnail.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Potheads</div>
+				</div>
+			</div>
 
-      </div>
+		</div>
 
-      <div class="photoframe">
+		<div class="photoframe">
 
-        <div class="container" onclick="showDesignWork(8)">
-          <img src="design\character\thumbnail.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Character Design</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(8)">
+				<img src="design\character\thumbnail.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Character Design</div>
+				</div>
+			</div>
 
-        <div class="container" onclick="showDesignWork(9)">
-          <img src="design\me\jaded.jpg" class="image">
-          <div class="overlay">
-            <div class="text">Me, Myself, & I</div>
-          </div>
-        </div>
+			<div class="container" onclick="showDesignWork(9)">
+				<img src="design\me\jaded.jpg" class="image">
+				<div class="overlay">
+					<div class="text">Me, Myself, & I</div>
+				</div>
+			</div>
 
-        <div class="container" onclick="showDesignWork(10)">
-          <img src="design\matsuri\b.png" class="image">
-          <div class="overlay">
-            <div class="text">Matsuri</div>
-          </div>
-        </div>
+		</div>
 
-      </div>
+	</div>
+	<div class="content" id="Resume" hidden="hidden">
 
-    </div>
-  <div class="content" id="resume" hidden="hidden">
-      <embed src="resume2017.pdf" type='application/pdf' width=100% height=100%>
-  </div>
-  <div class="content" id="contact" hidden="hidden">
-    <!-- method="POST" action="http://formspree.io/alflyaway0626@gmail.com" -->
-    <form id="contact-form" type="text/plain" action="javascript: emailSubmit()">
-        Dear Annie,<br>
-        My name is
-        <input type="text" name="name" id="name" minlength="3" placeholder="YOUR NAME" required> .<br>
-        You can contact me at
-        <input type="email" name="email" id="email" placeholder="YOUR EMAIL" required> .<br>
-        I wanted to contact you to tell you that<br>
-        <select>
-          <option value="default" selected="selected">...</option>
-          <option value="awesome">you are awesome</option>
-          <option value="work">I love your work!</option>
-          <option value="meeting">I'd like to meet you</option>
-          <option value="netflix">wanna netflix and chill?</option>
-        </select><br>
-        <div class="expandingArea">
-          <textarea name="message" id="message" placeholder="OR TYPE MESSAGE HERE"></textarea>
-        </div>
-        <div class="send"> <!--FIXME-->
-          <input type="submit" id="send" name="send" value="SEND">
-        </div>
-    </form>
-  </div>
-  <div class="content" id="thankyou">
-    <img src="thankyou.png">
-  </div>
+		<embed src="http://ec2-52-14-54-180.us-east-2.compute.amazonaws.com/~annielee/website/resume2017.pdf" type='application/pdf' width=100% height=100% />
+	</div>
+	<div class="content" id="Contact" hidden="hidden">
+		<form id="contact-form" type="text/plain" action="http://formspree.io/annie.lee@wustl.edu" method="POST">
+			Dear Annie,<br>
+			My name is
+			<input type="text" name="name" id="name" minlength="3" placeholder="YOUR NAME" required> .<br>
+			You can contact me at
+			<input type="email" name="email" id="email" placeholder="YOUR EMAIL" required> .<br>
+			I wanted to contact you to tell you that<br>
+			<select name="selection">
+				<option value="default" selected="selected">...</option>
+				<option value="awesome">you are awesome</option>
+				<option value="work">I love your work!</option>
+				<option value="meeting">I'd like to meet you</option>
+				<option value="netflix">wanna netflix and chill?</option>
+			</select><br>
+			<div class="expandingArea">
+				<textarea name="message" id="message" placeholder="OR TYPE MESSAGE HERE"></textarea>
+			</div>
+			<div class="send">
+				<input type="submit" id="send" value="SEND">
+			</div>
+		</form>
+	</div>
+	<div class="content" id="thankyou">
+		<img src="thankyou.png">
+	</div>
 
-  <!--Design Works Display Here-->
-  <div class="art" id="doodle1" hidden="hidden">
-        <img class="poster" src="design\illak_poster\poster.jpg">
-        <img class="poster" src="design\illak_poster\poster_sky.jpg">
-        <img class="poster" src="design\illak_poster\poster_star.jpg">
-        <img class="poster" src="design\illak_poster\clubdeal.jpg">
-        <img class="poster" src="design\illak_poster\hotdeal.jpg">
-        <img class="poster" src="design\illak_poster\dday.jpg">
-        <img class="poster" src="design\illak_poster\emoji_club.jpg">
-        <img class="poster" src="design\illak_poster\emoji_event.jpg">
-        <img class="poster" src="design\illak_poster\emoji_infinity2.jpg">
-        <img class="poster" src="design\illak_poster\와미시.jpg">
-        <img class="poster" src="design\illak_poster\2016halloweenposter.jpg">
-        <img class="poster" src="design\illak_poster\kgsa.jpg">
-        <img class="poster" src="design\illak_poster\welcome poster6.jpg">
-        <img class="poster" src="design\illak_poster\welcome poster7.jpg">
-        <img class="poster" src="design\illak_poster\welcome poster8.jpg">
-      </div>
-  <div class="art" id="doodle2" hidden="hidden">
+	<!--Design Works Display Here-->
+	<div class="art" id="doodle2" hidden="hidden">
 
-          <img class="mySlides" src="design\stress\1.jpg" style="width:90%">
-          <img class="mySlides" src="design\stress\2.jpg" style="width:90%">
-          <img class="mySlides" src="design\stress\3.jpg" style="width:45%">
+		<img class="mySlides" src="design\stress\1.jpg" style="width:90%">
+		<img class="mySlides" src="design\stress\2.jpg" style="width:90%">
+		<img class="mySlides" src="design\stress\3.jpg" style="width:45%">
 
-          <button class="slide-button display-left" onclick="plusDivs(-1)">&#10094;</button>
-          <button class="slide-button display-right" onclick="plusDivs(1)">&#10095;</button>
+		<button class="slide-button display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="slide-button display-right" onclick="plusDivs(1)">&#10095;</button>
 
-      </div>
-  <div class="art" id="doodle3" hidden="hidden">
-        <img class="pattern" src="design\pattern\1.png">
-        <img class="pattern" src="design\pattern\2.png">
-        <img class="pattern" src="design\pattern\3.png">
-        <img class="pattern" src="design\pattern\4.png">
-        <img class="pattern" src="design\pattern\5.png">
-      </div>
-  <div class="art" id="doodle4" hidden="hidden">
-        <img class="edible" src="design\aretheseedible.jpg">
-        <img class="edible" src="design\aretheseedible_thumbnail.jpg" style="max-width:50vw">
-        <img class="edible" src="design\aretheseedible_detail.jpg" style="max-width:50vw">
-      </div>
-  <div class="art" id="doodle5" hidden="hidden">
-        <img src="design\gif.gif">
-      </div>
-  <div class="art" id="doodle6" hidden="hidden">
-        <img class="cards" src="design\cards\birthday_thumbnail1.jpg">
-        <img class="cards" src="design\cards\birthday_thumbnail2.jpg">
-        <img class="cards" src="design\cards\birthday.jpg" style="max-width:30vw">
-        <img class="cards" src="design\cards\christmas_thumbnail1.jpg">
-        <img class="cards" src="design\cards\christmas_thumbnail2.jpg">
-        <img class="cards" src="design\cards\christmas.jpg" style="max-width:30vw">
-        <img class="cards" src="design\cards\graduation_thumbnail1.jpg">
-        <img class="cards" src="design\cards\graduation_thumbnail2.jpg">
-        <img class="cards" src="design\cards\graduation.jpg" style="max-width:30vw">
-      </div>
-  <div class="art" id="doodle7" hidden="hidden">
-        <p>First printmaking</p>
-        <img class="me" src="design\pothead.jpg">
-      </div>
-  <div class="art" id="doodle8" hidden="hidden">
-        <img class="lostheads" src="design\character\lostheads.png" width="10vw">
-      </div>
-  <div class="art" id="doodle9" hidden="hidden">
-        <img class="me" src="design\me\ego.jpg">
-        <img class="me" src="design\me\jaded.jpg">
-        <img class="me" src="design\me\longing.jpg">
-        <img class="me" src="design\me\love.jpg">
-        <img class="me" src="design\me\trapped.jpg">
-      </div>
-  <div class="art" id="doodle10" hidden="hidden">
-        <img class="matsuri" src="design\matsuri\a.jpg" style="width:90%">
-        <img class="matsuri" src="design\matsuri\b.png" style="width:90%">
-        <img class="matsuri" src="design\matsuri\c.jpg" style="width:90%">
-        <img class="matsuri" src="design\matsuri\d.png" style="width:90%">
-        <img class="matsuri" src="design\matsuri\e.jpg" style="width:90%">
-        <img class="matsuri" src="design\matsuri\f.jpg" style="width:90%">
-        <img class="matsuri" src="design\matsuri\g.jpg" style="width:90%">
-        <img class="matsuri" src="design\matsuri\h.jpg" style="width:90%">
-        <img class="matsuri" src="design\matsuri\i.jpg" style="width:90%">
-      </div>
-  <!--Ends Here-->
+	</div>
+	<div class="art" id="doodle3" hidden="hidden">
+		<img class="pattern" src="design\pattern\1.png">
+		<img class="pattern" src="design\pattern\2.png">
+		<img class="pattern" src="design\pattern\3.png">
+		<img class="pattern" src="design\pattern\4.png">
+		<img class="pattern" src="design\pattern\5.png">
+	</div>
+	<div class="art" id="doodle4" hidden="hidden">
+		<img class="edible" src="design\aretheseedible.jpg">
+		<img class="edible" src="design\aretheseedible_thumbnail.jpg" style="max-width:50vw">
+		<img class="edible" src="design\aretheseedible_detail.jpg" style="max-width:50vw">
+	</div>
+	<div class="art" id="doodle5" hidden="hidden">
+		<img src="design\gif.gif">
+	</div>
+	<div class="art" id="doodle6" hidden="hidden">
+		<img class="cards" src="design\cards\birthday_thumbnail1.jpg">
+		<img class="cards" src="design\cards\birthday_thumbnail2.jpg">
+		<img class="cards" src="design\cards\birthday.jpg" style="max-width:30vw">
+		<img class="cards" src="design\cards\christmas_thumbnail1.jpg">
+		<img class="cards" src="design\cards\christmas_thumbnail2.jpg">
+		<img class="cards" src="design\cards\christmas.jpg" style="max-width:30vw">
+		<img class="cards" src="design\cards\graduation_thumbnail1.jpg">
+		<img class="cards" src="design\cards\graduation_thumbnail2.jpg">
+		<img class="cards" src="design\cards\graduation.jpg" style="max-width:30vw">
+	</div>
+	<div class="art" id="doodle7" hidden="hidden">
+		<p>First printmaking</p>
+		<img class="me" src="design\pothead.jpg">
+	</div>
+	<div class="art" id="doodle8" hidden="hidden">
+		<img class="lostheads" src="design\character\lostheads.png" width="10vw">
+	</div>
+	<div class="art" id="doodle9" hidden="hidden">
+		<img class="me" src="design\me\ego.jpg">
+		<img class="me" src="design\me\jaded.jpg">
+		<img class="me" src="design\me\longing.jpg">
+		<img class="me" src="design\me\love.jpg">
+		<img class="me" src="design\me\trapped.jpg">
+	</div>
+	<!--Ends Here-->
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.js"></script>
-  <script>
-    function show(){
-      //FIXME
-      //var id = document.getIdbyClass("menu").value
-      $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".bg_img").removeClass('blur-in');
-      $(".bg_img").addClass('blur-out');
-      $(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 300);
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#menuContent").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function back(){
-      $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".bg_img").removeClass('blur-in');
-      $(".bg_img").addClass('blur-out');
-      $(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 300);
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#menuContent").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function back_doodle(){
-      $(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".bg_img").removeClass('blur-out');
-      $(".bg_img").addClass('blur-in');
-      $("#back_doodle").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#doodle").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function showAbout(){
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
-      $(".bg_img").removeClass('blur-out');
-      $(".bg_img").addClass('blur-in');
-      $("#about").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 203);
+	<footer>
+		copyright © anniechaehonglee 2017
+	</footer>
 
-    }
-    function showWork(){
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
-      $(".bg_img").removeClass('blur-out');
-      $(".bg_img").addClass('blur-in');
-      $("#work").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function showDoodle(){
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
-      $(".bg_img").removeClass('blur-out');
-      $(".bg_img").addClass('blur-in');
-      $("#doodle").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function showResume(){
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
-      $(".bg_img").removeClass('blur-out');
-      $(".bg_img").addClass('blur-in');
-      $("#resume").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 302);
-      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function showContact(){
-      $(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 300);
-      $(".bg_img").removeClass('blur-out');
-      $(".bg_img").addClass('blur-in');
-      $("#contact").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#screen").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function showDesignWork(num){
-      var id = "#doodle" + String(num);
-      $("#back").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#doodle").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $(id).fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-      $("#back_doodle").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function thankyou(){
-      $("#contact").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", 0);
-      $("#thankyou").fadeIn("fast").animate({opacity : '1'}, 300).css("z-index", 201);
-    }
-    function emailSubmit(){
-      //FIXME
-      thankyou();
-    }
-    $(function () {
-      var txtemail = $('#email'),
-      txtname = $('#name'),
-      txtmsg = $('#message'),
-      hiddenDiv = $(document.createElement('div')),
-      content = null;
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.js"></script>
+	<script>
+		//work dropdown menu js:
+		$('#spine a').click(function(){
+			if($("#spine").hasClass("open")){
+				$("#spine").find(".cs_contents").empty();
+				$("#spine").removeClass("open");
+				$('#spine_contents').css('visibility','hidden');
+			}
+			else{
+				$('#spine_contents').append("<h3>Project title: SPiNE</h3><p><b>Where/When:</b> ArchHacks, hackathon held at WUSTL. October 2017.<br /><br /><b>Award:</b> Runner-up for best overall hack, Biggest world impact, Best domain name<br /><br /><b>Link:</b> <a href=\"https://devpost.com/software/spine\" target=\"blank\"> https://devpost.com/software/spine </a><br /><br /></p><h3>About the project:</h3><p><b>Goal:</b> To make diagnose of pelvic rotation and scoliosis more affordable and accessible for people<br /><br /><b>Motivation:</b> Many are suffering from scoliosis and most incidences can be easily cured through stretching if diagnosed earlier in the stage. However, diagnose of such is expensive and time consuming for most people because currently, the only way to diagnose is through X-rays, CT scans, and MRI. And if not treated at an early stage, it will develop into a severe pelvic rotation that might be even more costly.<br /><br /><b>Method:</b> Using multithreading of two accelerometers of Arduino, we gather the user data. Then we process the data in Java adopting linear and quadratic regressions, extracting the estimation of user's pelvic rotation. Then using PHP, we connect this data with the user interface built in Javascript and CSS.<br /><br /><b>Next Steps:</b> Reliability research and connect with sponsors</p>"
+				);
+				$('#spine_contents').css('visibility','visible');
+				$("#spine").addClass("open");
+			}
+		});
 
-      txtemail.addClass('txtstuff');
-      txtname.addClass('txtstuff');
-      txtmsg.addClass('txtstuff');
-      hiddenDiv.addClass('hiddendiv common');
+		$('#sepia a').click(function(){
+			if($("#sepia").hasClass("open")){
+				$("#sepia").find(".cs_contents").empty();
+				$("#sepia").removeClass("open");
+				$('#sepia_contents').css('visibility','hidden');
+			}
+			else{
+				$("#sepia").children().show();
+				$('#sepia_contents').append("<h3>Project title: Sepia</h3><p><b>Where/When:</b> Personal team project<br /><br /><b>Link:</b> <a href=#></a><br /><br /></p><h3>About the project:</h3><p><b>Goal:</b>TBA<br /><br /><b>Motivation:</b>TBA<br /><br /><b>Method:</b>Python<br /><br /><b>Next Steps:</b></p>"
+				);
+				$('#sepia_contents').css('visibility','visible');
+				$("#sepia").addClass("open");
+			}
+		});
 
-      $('body').append(hiddenDiv);
+		$('#hci a').click(function(){
+			if($("#hci").hasClass("open")){
+				$("#hci").find(".cs_contents").empty();
+				$("#hci").removeClass("open");
+				$('#hci_contents').css('visibility','hidden');
+			}
+			else{
+				$('#hci_contents').append("<h3>Project title: HCI Research Experience at Looking Glass Lab</h3><p><b>Where/When: </b> WUSTL Kelleher Lab. Summer 2017.<br /><br /><b>Link: </b> <a href=\"http://ec2-52-14-54-180.us-east-2.compute.amazonaws.com/~annielee/BehaviorVisualization/behavior_visualization.html\" target=\"blank\"> http://.../~annielee/BehaviorVisualization/behavior_visualization.html </a><br /><br /><b>Presentation: </b> <a href=\"poster.pdf\" target=\"blank\">Poster</a> &  <a href=\"slides.pdf\" target=\"blank\">Slides</a></p><h3>About the project: </h3> <p><b>Goal:  </b>  To individualize learning experiences through modifying dificulty of code puzzles using machine learning algorithm</b><br /><br /><b>Motivation: </b> Technology is advancing quickly and we need more computer scientists in the workforce. To do so, early teaching of coding skills is important, but around the greater St. Louis area the number of computer science educators is dropping quickly because of so much opportunities with a CS degree. To provide more accessible coding education, the Looking Glass team made a program that teaches fundamental coding concepts, yet still cannot emulate human educators. What make human educators so special is their ability to provide individualized learning experiences, such as providing easier problem sets if a student is struggling.</b><br /><br /><b>Method: </b><ul><li>Find a new feature to add onto our current machine learning algorithm to better predict user performances.</li><li>To acheive this, analyze HCI log files that has all the information about drags and clicks from turning on the program and exiting the program.</li><li>The log files consist of timestamps, drags, clicks, and current puzzle status.</li><li>Use python and regex to parse data into different stages of puzzles and extract that info into excel files.</li><li>Use the excel files to draw meaningful visualization of puzzle progress.</li><li>I focused on how users behave after they watch the correct animation. The visualization can be found in the link provided above.</li><li>My visualization indicated that some users notice a bug immediately after watching the solution, while others struggle to find the problem and repetitively get the same thing incorrect.</li><li>I counted up using python and those excel files how many times users get the same incorrect solution after watching the solution.</li><li>That feature was added to the random forest decision split.</li></ul></b></p>"
+				);
+				$('#hci_contents').css('visibility','visible');
+				$("#hci").addClass("open");
+			}
+		});
+	</script>
+	<script>
+		$(".menu").click(function(){
+			var open = "#" + $(this).text();
+			$(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$(".overlay_black").fadeIn("fast").animate({opacity : '1'}, 100);
+			$(open).fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 4);
+			$("#back").fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 3);
+		});
+		function back(){
+			$(".content").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$(".overlay_black").fadeOut("fast").animate({opacity : '0'}, 100);
+			$("#menuContent").fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 3);
+		}
+		function back_doodle(){
+			$(".art").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$("#back_doodle").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$("#Doodle").fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 4);
+			$("#back").fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 3);
+		}
+		function showDesignWork(num){
+			var id = "#doodle" + String(num);
+			$("#Doodle").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$("#back").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$(id).fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 4);
+			$("#back_doodle").fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 3);
+		}
+		function thankyou(){
+			$("#contact").fadeOut("fast").animate({opacity : '0'}, 100).css("z-index", -1);
+			$("#thankyou").fadeIn("fast").animate({opacity : '1'}, 100).css("z-index", 4);
+		}
+		function emailSubmit(){
+			//FIXME
+			thankyou();
+		}
+		$(function () {
+			var txtemail = $('#email'),
+			txtname = $('#name'),
+			txtmsg = $('#message'),
+			hiddenDiv = $(document.createElement('div')),
+			content = null;
 
-      txtemail.on('keyup', function () {
-        content = $(this).val();
-        content = content.replace(/\n/g, '<br>');
-        hiddenDiv.html(content + '<br class="lbr">');
-        $(this).css('width', hiddenDiv.width());
-      });
-      txtname.on('keyup', function () {
-        content = $(this).val();
-        content = content.replace(/\n/g, '<br>');
-        hiddenDiv.html(content + '<br class="lbr">');
-        //$(this).css('height', hiddenDiv.height());
-        $(this).css('width', hiddenDiv.width());
-      });
-      txtmsg.on('keyup', function () {
-        content = $(this).val();
-        content = content.replace(/\n/g, '<br>');
-        hiddenDiv.html(content + '<br class="lbr">');
-        $(this).css('height', hiddenDiv.height());
-      });
-    });
-  </script>
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
+			txtemail.addClass('txtstuff');
+			txtname.addClass('txtstuff');
+			txtmsg.addClass('txtstuff');
+			hiddenDiv.addClass('hiddendiv common');
 
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
+			$('body').append(hiddenDiv);
 
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      if (n > x.length) {slideIndex = 1}
-      if (n < 1) {slideIndex = x.length}
-      for (i = 0; i < x.length; i++) {
-         x[i].style.display = "none";
-      }
-      x[slideIndex-1].style.display = "block";
-    }
-  </script>
+			txtemail.on('keyup', function () {
+				content = $(this).val();
+				content = content.replace(/\n/g, '<br>');
+				hiddenDiv.html(content + '<br class="lbr">');
+				$(this).css('width', hiddenDiv.width());
+			});
+			txtname.on('keyup', function () {
+				content = $(this).val();
+				content = content.replace(/\n/g, '<br>');
+				hiddenDiv.html(content + '<br class="lbr">');
+				//$(this).css('height', hiddenDiv.height());
+				$(this).css('width', hiddenDiv.width());
+			});
+			txtmsg.on('keyup', function () {
+				content = $(this).val();
+				content = content.replace(/\n/g, '<br>');
+				hiddenDiv.html(content + '<br class="lbr">');
+				$(this).css('height', hiddenDiv.height());
+			});
+		});
+	</script>
+	<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+		function plusDivs(n) {
+			showDivs(slideIndex += n);
+		}
+		function showDivs(n) {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			if (n > x.length) {slideIndex = 1}
+			if (n < 1) {slideIndex = x.length}
+			for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+			}
+			x[slideIndex-1].style.display = "block";
+		}
+	</script>
 </body>
-<footer>
-  copyright © anniechaehonglee 2017
-</footer>
+
 </html>
