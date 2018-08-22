@@ -1,0 +1,51 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,900,900i);
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+}
+.bg_img{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-image: url(../background.png);
+	background-size: 380px;
+	background-repeat: repeat;
+	z-index: 0;
+}
+#fixed-background{
+	animation: colorchange 5s cubic-bezier(0.3,0,0.7,1) infinite;
+	-webkit-animation: colorchange 5s cubic-bezier(0.3,0,0.7,1) infinite;
+}
+@keyframes colorchange{
+	0%   {background: rgb(241, 123, 131);}
+	20%  {background: rgb(175, 104, 214);}
+	40%  {background: rgb(94, 125, 204);}
+	60%  {background: rgb(95, 196, 169);}
+	80% {background: rgb(209, 128, 88);}
+	100% {background: rgb(241, 123, 131);}
+}
+@-webkit-keyframes colorchange{
+	0%   {background: rgb(241, 123, 131);}
+	20%  {background: rgb(175, 104, 214);}
+	40%  {background: rgb(94, 125, 204);}
+	60%  {background: rgb(95, 196, 169);}
+	80% {background: rgb(209, 128, 88);}
+	100% {background: rgb(241, 123, 131);}
+}
+.content-wrapper{
+	margin: 0;
+	position: fixed;
+	top: 5%;
+	right: 5%;
+	background: rgba(0, 0, 0, 0.5);
+}
+iframe{
+	border: 0;
+	width: 90%;
+	height: 90%;
+}

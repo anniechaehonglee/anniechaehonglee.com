@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Annie Chaehong Lee</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<style>
+		#navbar {
+			margin: 0;
+
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			display: -webkit-box;
+			display: -moz-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+
+			-webkit-flex-flow: row wrap;
+			justify-content: space-around;
+		}
+		#navbar a {
+			text-decoration: none;
+			display: block;
+			padding: 1em;
+			font-weight: 900;
+			text-align: center;
+			color: inherit;
+		}
+		#navbar a:hover {
+			background: darken(deepskyblue, 2%);
+		}
+		.nav-wrapper{
+			display: table;
+			margin: auto;
+			height: 100%;
+			flex-grow: 1;
+			color: white;
+		}
+		.nav-wrapper:hover{
+			background-color: rgb(235, 247, 241);
+			color: rgb(249, 58, 58);
+			text-shadow: 2px 2px 5px rgba(44, 83, 60, 0.83);
+		}
+		.ver-middle{
+			display: table-cell;
+			vertical-align: middle;
+		}
+		@media all and (max-width: 800px) {
+			#navbar {
+				justify-content: space-around;
+			}
+		}
+		@media all and (max-width: 600px) {
+			#navbar {
+				-webkit-flex-flow: column wrap;
+				flex-flow: column wrap;
+				padding: 0;
+			}
+			.nav-wrapper{
+				height: 25%;
+				width: 100%;
+			}
+			#navbar a {
+				padding: 10px;
+				position: relative;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="navbar">
+		<div class="nav-wrapper">
+			<div class="ver-middle">
+				<a href="about.html">ABOUT</a>
+			</div>
+		</div>
+		<div class="nav-wrapper">
+			<div class="ver-middle">
+				<a href="projects.html">PROJECTS</a>
+			</div>
+		</div>
+		<div class="nav-wrapper">
+			<div class="ver-middle">
+				<a href="doodle.html">DOODLE</a>
+			</div>
+		</div>
+		<div class="nav-wrapper">
+			<div class="ver-middle">
+				<a href="resume.html">RESUME</a>
+			</div>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>

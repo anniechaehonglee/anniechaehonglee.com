@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Annie Chaehong Lee:ABOUT</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<style>
+	body{
+		color: white;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+	h2{
+		display: block;
+	}
+	.wrapper{
+		display: block;
+		width: 100%;
+		margin: auto;
+
+	}
+	.wrapper > div{
+		width: 40%;
+		margin: auto;
+		display: inline-block;
+		vertical-align: top;
+		box-sizing: border-box;
+	}
+	.wrapper > div:nth-child(2){
+		padding-left: 20px;
+		min-width: 400px;
+	}
+	.img-wrapper{
+		position: relative;
+	}
+	.img-wrapper > img{
+		position: absolute;
+		top: 0;
+		right: 0;
+		max-height: 500px;
+		width: auto;
+	}
+	a{
+		font-style: none;
+		color: white;
+	}
+	#sns-icons{
+		font-size: 2rem;
+	}
+	#sns-icons > i{
+		margin: auto 0.1rem;
+	}
+	@media all and (max-width: 672px){
+		.img-wrapper{
+			position: static;
+			width: 100%;
+		}
+		.img-wrapper > img{
+			position: static;
+			display: block;
+			margin: auto;
+			height: auto;
+			max-height: none;
+			width: 90%;
+		}
+		.wrapper > div{
+			display: block;
+			width: 100%;
+		}
+		.wrapper > div:nth-child(2){
+			padding-right: 20px;
+			min-width: 0px;
+		}
+	}
+	</style>
+</head>
+<body>
+	<h2><center>ANNIE CHAEHONG LEE<br></center></h2>
+	<div class="wrapper">
+		<div class="img-wrapper">
+			<img src="annie.jpg" />
+		</div>
+		<div>
+			<p>
+				Hi, I'm a senior at Washington University in St. Louis majoring in <b>computer science</b> and <b>applied mathematics</b>, and I'm also minoring in <b>communication design</b>. My main interest is computer vision. I envision to provide more advanced modes of tele-communication using computer vision.
+			</p>
+			<p>
+				Something that differentiates me from other computer scientists is that I have a deep personal history with art and design. I used to pursue a degree as an artist, following my mother's career, but I switched my path after realizing I can be just as creative with just a few lines of code--without paint and brushes. But still, this background in design lets me percieve the world more fluently, allowing me to build more navigable code that can communciate with others better.
+			</p>
+			<span id="sns-icons">
+				<a href=""><i class="fab fa-facebook-square"></i></a>
+				<a href=""><i class="fab fa-instagram"></i></a>
+				<a href=""><i class="fab fa-linkedin"></i></a>
+				<a href=""><i class="fab fa-github"></i></a>
+			</span>
+			<p>
+				Email me for a copy of my resume: <u>annie.lee (at) wustl (dot) edu</u>
+			</p>
+		</div>
+	</div>
+
+</div>
+</body>
+</html>
